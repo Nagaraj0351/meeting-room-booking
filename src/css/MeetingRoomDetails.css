@@ -1,0 +1,36 @@
+h1 {
+    position: relative;
+}
+.room-details-container {
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+    background: #fff;
+    top: 0;
+    min-height: 100vh;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.8s;
+}
+.room-details-container.is-active {
+    visibility: visible;
+    opacity: 1;
+}
+.close-icon {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    font-size: 18px;
+    line-height: 18px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}

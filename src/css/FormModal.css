@@ -1,0 +1,49 @@
+form {
+    max-width: 300px;
+    text-align: left;
+    margin: 0 auto;
+    padding: 30px;
+    box-sizing: content-box;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    position: relative;
+}
+.close-icon {
+    top:10px;
+    right: 10px;
+    bottom: unset;
+    margin: unset;
+}
+form > h1 {
+    text-align: center;
+}
+.form-group label {
+   display: block;
+   width: 100%;
+   font-size: 14px;
+   font-weight: bold;
+   margin-top: 15px;
+   margin-bottom: 10px;
+}
+.react-datepicker-wrapper {
+    width: 100%;
+}
+.form-group input {
+    width: 100%;
+    padding: 8px;
+}
+.form-modal-container {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    min-height: 100%;
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 22;
+    transition: opacity 0.8s;
+}
+.form-modal-container.is-active {
+    visibility: visible;
+    opacity: 1;
+}

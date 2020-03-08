@@ -1,0 +1,45 @@
+.meeting-rooms {
+    display: flex;
+    flex-wrap: wrap;
+}
+.meeting-rooms > .item {
+    padding: 10px;
+    flex: 1 0 25%;
+    margin: 4px;
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 2px #ccc;
+}
+.meeting-rooms > .item > h3 {
+    margin-bottom: 10px;
+}
+.scheduled-slots {
+    list-style: none;
+    text-align: left;
+}
+.scheduled-slots > li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.scheduled-slots div.scheduled-date,
+.scheduled-slots div.scheduled-time  {
+    flex-basis: 120px;
+}
+.scheduled-slots div.scheduled-user {
+    flex-basis: 200px;
+}
+.scheduled-slots div.action-btns {
+    flex-basis: 50px;
+}
+.scheduled-slots div.scheduled-agenda {
+    flex: 1;
+}
+/* .room-details-container {
+    position: absolute;
+    width: 100%;
+    top:0;
+    z-index: 11;
+    background-color: #fff;
+    min-height: 100%;
+} */
