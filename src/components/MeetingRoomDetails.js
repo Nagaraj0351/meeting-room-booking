@@ -21,7 +21,7 @@ class MeetingRoomDetails extends Component {
 
     render() {
         const listItems = this.state.data ? this.state.data.map((booking, index) => {
-            if(booking.roomNumber === this.props.roomno) {
+            if(parseInt(booking.roomNumber) === parseInt(this.props.roomno)) {
                 return <li key={booking.id}>
                     <div className="scheduled-date">
                         <Moment format="DD/MM/YYYY">
