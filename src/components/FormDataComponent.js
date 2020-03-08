@@ -31,9 +31,10 @@ class FormDataComponent extends Component {
     }
     
     addBooking = (e) => {
-        if(this.userName.current.value === "") {
+        if(this.userName.current.value === "" || this.time.current.value === "" || this.agenda.current.value === "") {
+            alert("all fields are mandatory!");
             e.preventDefault();
-            return false;
+            return false; 
         }
         
         const Items = {
