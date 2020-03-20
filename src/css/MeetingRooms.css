@@ -35,11 +35,43 @@
 .scheduled-slots div.scheduled-agenda {
     flex: 1;
 }
-/* .room-details-container {
-    position: absolute;
-    width: 100%;
-    top:0;
-    z-index: 11;
-    background-color: #fff;
-    min-height: 100%;
-} */
+.slot-search {
+    display: flex;
+    text-align: left;
+    padding: 20px 4px;
+    flex-wrap: wrap;
+}
+.slot-search > div {
+    margin-right: 20px;
+}
+select {
+    display: block;
+}
+.status {
+    padding-top: 10px;
+    align-items: center;
+}
+.status > span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: #ccc;
+    border-radius: 50%;
+}
+.status.available > span {
+    background: green;
+}
+.status.booked > span {
+    background: red;
+}
+input, select {
+    padding: 6px;
+}
+.check-availability {
+    padding: 8px 20px;
+    background: #2196f3;
+    color: #fff;
+    border: 0px;
+    align-self: flex-end;
+    cursor: pointer;
+}

@@ -28,7 +28,7 @@ class MeetingRoomDetails extends Component {
                             {Date.parse(booking.date)}
                         </Moment>
                     </div> 
-                    <div className="scheduled-time">{booking.time}</div> 
+                    <div className="scheduled-time">{booking.timeSlots[0]} - {booking.timeSlots[booking.timeSlots.length - 1]}</div> 
                     <div className="scheduled-user">{booking.userName}</div> 
                     <div className="scheduled-agenda">{booking.agenda}</div> 
                     <div className="action-btns"><button data-key={index} onClick={this.deleteItem} className="delete-btn">Delete</button></div>

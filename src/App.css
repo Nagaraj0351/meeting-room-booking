@@ -58,7 +58,6 @@ time, mark, audio, video {
   }
 }
 
-
 .container {
   max-width: 840px;
   margin: 0 auto;
@@ -76,6 +75,10 @@ time, mark, audio, video {
 .view-btn {
   background: #2196F3;
   margin-left: 4px;
+}
+.view-btn[disabled] {
+  background: #888888;
+  cursor: not-allowed;
 }
 .delete-btn {
   background-color: red;

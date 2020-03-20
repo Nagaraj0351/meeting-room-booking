@@ -34,3 +34,13 @@ h1 {
     text-align: center;
     cursor: pointer;
 }
+.time-range {
+    display: flex;
+    justify-content: space-between;
+}
+.time-range > div {
+    flex-basis: 45%;
+}
+.time-range > div select {
+    width: 100%;
+}
